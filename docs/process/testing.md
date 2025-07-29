@@ -280,7 +280,7 @@
   
 ### Next Steps
  - [ ] Up to four suggested steps are shown at any given time, contingent on the state of the repository and/or branch
-   - [ ] First step is not always shown, and it can be `View Stash`, `Pull Origin`, `Pull Origin`, `Create Pull Request`, `Publish Repository`
+  - [ ] First step is not always shown, and it can be `View Stash`, `Steal changes`, `Steal changes from <remote>`, `Create Pull Request`, `Publish Repository`
    - [ ] Other steps are `Open in [editor]` with Preferences/Options link, `Show in [Finder/Explorer]` and `View in GitHub`
 
 ### Repositories list

@@ -623,9 +623,11 @@ export class PushPullButton extends React.Component<
     forcePushBranchState: ForcePushBranchState,
     onClick: () => void
   ) {
-    const title = pullWithRebase
-      ? `Pull ${remoteName} with rebase`
-      : `Pull ${remoteName}`
+    const baseTitle =
+      remoteName === 'origin'
+        ? 'Steal changes'
+        : `Steal changes from ${remoteName}`
+    const title = pullWithRebase ? `${baseTitle} with rebase` : baseTitle
 
     const dropdownItemTypes = [DropdownItemType.Fetch]
 

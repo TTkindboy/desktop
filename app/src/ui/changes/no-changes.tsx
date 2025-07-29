@@ -572,7 +572,10 @@ export class NoChanges extends React.Component<
       aheadBehind.behind === 1 ? 'commit' : 'commits'
     } from the ${remote.name} remote`
 
-    const buttonText = `Pull ${remote.name}`
+    const buttonText =
+      remote.name === 'origin'
+        ? 'Steal changes'
+        : `Steal changes from ${remote.name}`
 
     return (
       <MenuBackedSuggestedAction
